@@ -70,7 +70,7 @@ function showNextSlide() {
     currentIndex = (currentIndex + 1) % slides.length;
     showSlide(currentIndex);
 }
-
+const autoPlay = setInterval(showNextSlide, 4000);
 leftArrow.addEventListener("click", showPreviousSlide);
 rightArrow.addEventListener("click", showNextSlide);
 
